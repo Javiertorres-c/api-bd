@@ -20,7 +20,7 @@ public class AlumnoController {
     }
 
     @PostMapping
-    //@ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED)
     public AlumnoResponse crear(
             @Valid @RequestBody AlumnoCreateRequest request) {
         return alumnoService.crear(request);
